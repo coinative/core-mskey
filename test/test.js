@@ -30,26 +30,6 @@ describe('MSKey', function () {
     });
   });
 
-  describe('isHD', function () {
-    var sdkey = new Key({});
-    var hdkey = new HDKey({ seed: hex('00') });
-
-    it('should be true when all HDKeys', function () {
-      var key = new MSKey({ m: 1, keys: [hdkey, hdkey] });
-      expect(new MSKey({ m: 1, keys: [hdkey, hdkey] }).isHD).to.be.true;
-    });
-
-    it('should be false when all Keys', function () {
-      var key = new MSKey({ m: 1, keys: [sdkey, sdkey] });
-      expect(key.isHD).to.be.false;
-    });
-
-    it('should be false when mixed', function () {
-      var key = new MSKey({ m: 1, keys: [hdkey, sdkey] });
-      expect(key.isHD).to.be.false;
-    });
-  });
-
   describe('derive/deriveHardened', function () {
     var sdkey = new Key({});
 
