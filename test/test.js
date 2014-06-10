@@ -1,6 +1,6 @@
 var MSKey = require('../');
-var Key = require('core-key');
-var HDKey = require('core-hdkey');
+var Key = require('satoshi-key');
+var HDKey = require('satoshi-hdkey');
 
 var hex = function (hex) { return new Buffer(hex, 'hex'); };
 

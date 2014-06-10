@@ -1,5 +1,5 @@
 {
-  "name": "core-mskey",
+  "name": "satoshi-mskey",
   "version": "0.0.0",
   "description": "Bitcoin multisignature key implementation for NodeJS and browsers",
   "main": "lib/index.js",
@@ -12,8 +12,8 @@
   "devDependencies": {
     "browserify": "^4.1.6",
     "chai": "^1.9.1",
-    "core-hdkey": "git://github.com/coinative/core-hdkey",
-    "core-key": "git://github.com/coinative/core-key",
+    "satoshi-hdkey": "git://github.com/coinative/satoshi-hdkey",
+    "satoshi-key": "git://github.com/coinative/satoshi-key",
     "karma": "^0.12.16",
     "karma-browserify": "^0.2.1",
     "karma-chai": "^0.1.0",
@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "buffer": "2.3.0",
-    "core-address": "git://github.com/coinative/core-address",
-    "core-hash": "git://github.com/coinative/core-hash",
-    "core-script": "git://github.com/coinative/core-script"
+    "satoshi-address": "git://github.com/coinative/satoshi-address",
+    "satoshi-hash": "git://github.com/coinative/satoshi-hash",
+    "satoshi-script": "git://github.com/coinative/satoshi-script"
   }
 }
